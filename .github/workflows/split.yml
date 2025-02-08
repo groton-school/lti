@@ -16,7 +16,7 @@ jobs:
       matrix:
         package:
           - local_path: 'slim-lti-gae-shim'
-            split_repository: 'lti.slim-gae-shim'
+            split_repository: 'lti.slim-lti-gae-shim'
           - local_path: 'slim-lti-shim'
             split_repository: 'lti.slim-lti-shim'
     steps:
