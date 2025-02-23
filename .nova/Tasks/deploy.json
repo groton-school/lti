@@ -2,7 +2,7 @@
   "actions" : {
     "run" : {
       "enabled" : true,
-      "script" : "pnpm run deploy --verbose"
+      "script" : "cd templates\/slim-lti-skeleton\npnpm run deploy -v"
     }
   },
   "openLogOnRun" : "start"
