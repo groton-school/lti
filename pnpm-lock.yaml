@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@battis/eslint-config':
         specifier: ^2.0.3
-        version: 2.0.3(@eslint/js@9.21.0)(eslint-config-prettier@10.0.1(eslint@9.21.0))(eslint-plugin-html@8.1.2)(eslint-plugin-markdown@5.1.0(eslint@9.21.0))(eslint@9.21.0)(globals@11.12.0)(typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3))(typescript@5.7.3)
+        version: 2.0.3(@eslint/js@9.21.0)(eslint-config-prettier@10.0.1(eslint@9.21.0))(eslint-plugin-html@8.1.2)(eslint-plugin-markdown@5.1.0(eslint@9.21.0))(eslint@9.21.0)(globals@14.0.0)(typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3))(typescript@5.7.3)
       '@battis/prettier-config':
         specifier: ^1.5.6
         version: 1.5.6(typescript@5.7.3)
@@ -1587,14 +1587,14 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@battis/eslint-config@2.0.3(@eslint/js@9.21.0)(eslint-config-prettier@10.0.1(eslint@9.21.0))(eslint-plugin-html@8.1.2)(eslint-plugin-markdown@5.1.0(eslint@9.21.0))(eslint@9.21.0)(globals@11.12.0)(typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3))(typescript@5.7.3)':
+  '@battis/eslint-config@2.0.3(@eslint/js@9.21.0)(eslint-config-prettier@10.0.1(eslint@9.21.0))(eslint-plugin-html@8.1.2)(eslint-plugin-markdown@5.1.0(eslint@9.21.0))(eslint@9.21.0)(globals@14.0.0)(typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3))(typescript@5.7.3)':
     dependencies:
       '@eslint/js': 9.21.0
       eslint: 9.21.0
       eslint-config-prettier: 10.0.1(eslint@9.21.0)
       eslint-plugin-html: 8.1.2
       eslint-plugin-markdown: 5.1.0(eslint@9.21.0)
-      globals: 11.12.0
+      globals: 14.0.0
       typescript: 5.7.3
       typescript-eslint: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
 
