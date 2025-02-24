@@ -6,16 +6,6 @@
     {
       "name": "Seth Battis",
       "email": "sbattis@groton.org"
-    },
-    {
-      "name": "Josh Lockhart",
-      "email": "info@joshlockhart.com",
-      "homepage": "http://www.joshlockhart.com/"
-    },
-    {
-      "name": "Pierre Berube",
-      "email": "pierre@lgse.com",
-      "homepage": "http://www.lgse.com/"
     }
   ],
   "require": {
