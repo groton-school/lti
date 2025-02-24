@@ -36,14 +36,13 @@
   "replace": {
     "groton-school/slim-lti-gae-shim": "self.version",
     "groton-school/slim-lti-shim": "self.version",
-    "groton-school/slim-lti-skeleton": "self.version",
-    "slim/slim-skeleton": "self.version"
+    "groton-school/slim-lti-skeleton": "self.version"
   },
   "autoload": {
     "psr-4": {
-      "App\\": "templates/slim-lti-gae-skeleton/src/",
+      "App\\": "templates/slim-lti-skeleton/src/",
       "GrotonSchool\\SlimLTI\\": "packages/slim-lti-shim/src/",
-      "GrotonSchool\\SlimLTI\\GAE\\": "packages/slim-lti/src/"
+      "GrotonSchool\\SlimLTI\\GAE\\": "packages/slim-lti-gae-shim/src/"
     }
   },
   "autoload-dev": {
