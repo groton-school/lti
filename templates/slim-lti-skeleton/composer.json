@@ -19,6 +19,7 @@
     "casbin/casbin": "^4.0",
     "groton-school/slim-lti-gae-shim": "dev-main",
     "groton-school/slim-lti-shim": "dev-main",
+    "groton-school/firestore-http-basic-authenticator": "dev-main",
     "monolog/monolog": "^2.8",
     "php-di/php-di": "^7.0",
     "slim/psr7": "^1.7",
@@ -26,6 +27,7 @@
     "tuupola/slim-basic-auth": "^3.4"
   },
   "require-dev": {
+    "franzl/studio": "^0.16.0",
     "jangregor/phpstan-prophecy": "^1.0.0",
     "phpspec/prophecy-phpunit": "^2.0",
     "phpstan/extension-installer": "^1.2.0",
@@ -35,6 +37,7 @@
   },
   "config": {
     "allow-plugins": {
+      "franzl/studio": true,
       "phpstan/extension-installer": true
     },
     "process-timeout": 0,
