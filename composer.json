@@ -11,6 +11,7 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
+    "casbin/casbin": "^4.0",
     "google/appengine-php-sdk": "^2.2",
     "google/cloud-firestore": "^1.48",
     "google/cloud-logging": "^1.32",
@@ -20,9 +21,11 @@
     "php-di/php-di": "^7.0",
     "slim/psr7": "^1.7",
     "slim/slim": "^4.14",
+    "tuupola/slim-basic-auth": "^3.4",
     "vlucas/phpdotenv": "^5.6"
   },
   "require-dev": {
+    "franzl/studio": "^0.16.0",
     "friendsofphp/php-cs-fixer": "^3.68",
     "jangregor/phpstan-prophecy": "^1.0.0",
     "marcocesarato/php-conventional-changelog": "^1.17",
@@ -34,6 +37,7 @@
     "symplify/monorepo-builder": "^11.2"
   },
   "replace": {
+    "groton-school/firestore-http-basic-authenticator": "self.version",
     "groton-school/slim-lti-gae-shim": "self.version",
     "groton-school/slim-lti-shim": "self.version",
     "groton-school/slim-lti-skeleton": "self.version"
@@ -41,6 +45,7 @@
   "autoload": {
     "psr-4": {
       "App\\": "templates/slim-lti-skeleton/src/",
+      "GrotonSchool\\Firestore\\HttpBasicAuthentication\\": "packages/firestore-http-basic-authenticator/src/",
       "GrotonSchool\\SlimLTI\\": "packages/slim-lti-shim/src/",
       "GrotonSchool\\SlimLTI\\GAE\\": "packages/slim-lti-gae-shim/src/"
     }
@@ -53,6 +58,7 @@
   "config": {
     "sort-packages": true,
     "allow-plugins": {
+      "franzl/studio": true,
       "phpstan/extension-installer": true
     }
   }
