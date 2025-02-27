@@ -10,7 +10,7 @@ use Google\Cloud\Firestore\FirestoreClient;
 class FirestoreAuthenticator implements AuthenticatorInterface
 {
     // TODO make FirestoreAuthenticator::COLLECTION_PATH configurable
-    private const COLLECTION_PATH = '/users';
+    private const COLLECTION_PATH = 'users';
 
     private FirestoreClient $firestore;
 
