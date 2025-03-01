@@ -19,10 +19,10 @@ importers:
     devDependencies:
       '@battis/partly-gcloudy':
         specifier: ^1.1.0
-        version: 1.1.0(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.core@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.env@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.shell@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.validators@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))
+        version: 1.1.0(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.core@2.1.0(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.env@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.shell@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.validators@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))
       '@battis/qui-cli.core':
-        specifier: ^2.0.1
-        version: 2.0.1(@battis/qui-cli.plugin@2.1.0)
+        specifier: ^2.1.0
+        version: 2.1.0(@battis/qui-cli.plugin@2.1.0)
       '@battis/qui-cli.root':
         specifier: ^2.0.2
         version: 2.0.2(@battis/qui-cli.plugin@2.1.0)
@@ -130,8 +130,8 @@ packages:
     peerDependencies:
       '@battis/qui-cli.plugin': ^2.0
 
-  '@battis/qui-cli.core@2.0.1':
-    resolution: {integrity: sha512-VZgoDORzggBxtL6v8jSJF0VTeQhOuphIHDUb59zSePD5lkacCNpcy7d1fVLFFPIp92aZD6Os6VkStJg5oQ+ewg==}
+  '@battis/qui-cli.core@2.1.0':
+    resolution: {integrity: sha512-5ejj6TwXXZrtvZ2IdF66v9MHLkyDQso7N7hHrfDT2+s0Unm8WC80UqVKeRUaBxRqXvWNozrEem7SfAi76YDQFQ==}
     peerDependencies:
       '@battis/qui-cli.plugin': ^2.0
 
@@ -418,8 +418,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/lodash@4.17.15':
-    resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
+  '@types/lodash@4.17.16':
+    resolution: {integrity: sha512-HX7Em5NYQAXKW+1T+FiuG27NGwzJfCX3s1GjOa7ujxZa52kjJLOr4FUxT+giF6Tgxv1e+/czV/iTtBw27WTU9g==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -986,6 +986,10 @@ packages:
   jackspeak@2.3.6:
     resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
     engines: {node: '>=14'}
+
+  jackspeak@4.1.0:
+    resolution: {integrity: sha512-9DDdhb5j6cpeitCbvLO7n7J4IxnbM6hoF6O1g4HQ5TfhvvKN8ywDM7668ZhMHRqVmxqhps/F6syWK2KcPxYlkw==}
+    engines: {node: 20 || >=22}
 
   javascript-natural-sort@0.7.1:
     resolution: {integrity: sha512-nO6jcEfZWQXDhOiBtG2KvKyEptz7RVbpGP4vTD2hLBdmNQSsCiicO2Ioinv6UI4y9ukqnBpy+XZ9H6uLNgJTlw==}
@@ -1606,10 +1610,10 @@ snapshots:
       node-fetch: 3.3.2
       semver: 7.7.1
 
-  '@battis/partly-gcloudy@1.1.0(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.core@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.env@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.shell@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.validators@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))':
+  '@battis/partly-gcloudy@1.1.0(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.core@2.1.0(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.env@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.shell@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.log@2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.validators@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0)))':
     dependencies:
       '@battis/qui-cli.colors': 2.0.1(@battis/qui-cli.plugin@2.1.0)
-      '@battis/qui-cli.core': 2.0.1(@battis/qui-cli.plugin@2.1.0)
+      '@battis/qui-cli.core': 2.1.0(@battis/qui-cli.plugin@2.1.0)
       '@battis/qui-cli.env': 2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))
       '@battis/qui-cli.log': 2.0.1(@battis/qui-cli.colors@2.0.1(@battis/qui-cli.plugin@2.1.0))(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))
       '@battis/qui-cli.plugin': 2.1.0
@@ -1643,10 +1647,10 @@ snapshots:
       '@battis/qui-cli.plugin': 2.1.0
       chalk: 4.1.2
 
-  '@battis/qui-cli.core@2.0.1(@battis/qui-cli.plugin@2.1.0)':
+  '@battis/qui-cli.core@2.1.0(@battis/qui-cli.plugin@2.1.0)':
     dependencies:
       '@battis/qui-cli.plugin': 2.1.0
-      jackspeak: 2.3.6
+      jackspeak: 4.1.0
 
   '@battis/qui-cli.env@2.0.1(@battis/qui-cli.plugin@2.1.0)(@battis/qui-cli.root@2.0.2(@battis/qui-cli.plugin@2.1.0))':
     dependencies:
@@ -1913,7 +1917,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/lodash@4.17.15': {}
+  '@types/lodash@4.17.16': {}
 
   '@types/mdast@3.0.15':
     dependencies:
@@ -2470,6 +2474,10 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
+  jackspeak@4.1.0:
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+
   javascript-natural-sort@0.7.1: {}
 
   js-tokens@4.0.0: {}
@@ -2980,7 +2988,7 @@ snapshots:
   yup@0.32.9:
     dependencies:
       '@babel/runtime': 7.26.9
-      '@types/lodash': 4.17.15
+      '@types/lodash': 4.17.16
       lodash: 4.17.21
       lodash-es: 4.17.21
       nanoclone: 0.2.1
