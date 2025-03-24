@@ -15,8 +15,8 @@ jobs:
       fail-fast: false
       matrix:
         packages:
-          - local_path: 'firestore-http-basic-authenticator'
-            split_repository: 'lti.firestore-http-basic-authenticator'
+          - local_path: 'slim-action'
+            split_repository: 'lti.slim-action'
           - local_path: 'slim-lti-gae-shim'
             split_repository: 'lti.slim-lti-gae-shim'
           - local_path: 'slim-lti-shim'

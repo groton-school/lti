@@ -1,65 +1,69 @@
 {
-  "name": "groton-school/lti",
-  "license": "GPL-3.0",
-  "version": "0.0.0",
-  "authors": [
-    {
-      "name": "Seth Battis",
-      "email": "sbattis@groton.org"
+    "name": "groton-school/lti",
+    "license": "GPL-3.0",
+    "version": "0.0.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sbattis@groton.org"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "casbin/casbin": "^4.0",
+        "google/appengine-php-sdk": "^2.2",
+        "google/cloud-firestore": "^1.48",
+        "google/cloud-logging": "^1.32",
+        "guzzlehttp/guzzle": "^7.9",
+        "monolog/monolog": "^2.8",
+        "packbackbooks/lti-1p3-tool": "^6.2",
+        "php-di/php-di": "^7.0",
+        "slim/psr7": "^1.7",
+        "slim/slim": "^4.14",
+        "tuupola/slim-basic-auth": "^3.4",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "franzl/studio": "^0.16.0",
+        "friendsofphp/php-cs-fixer": "^3.68",
+        "jangregor/phpstan-prophecy": "^1.0.0",
+        "marcocesarato/php-conventional-changelog": "^1.17",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/extension-installer": "^1.2.0",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5.26",
+        "squizlabs/php_codesniffer": "^3.7",
+        "symplify/monorepo-builder": "^11.2"
+    },
+    "replace": {
+        "groton-school/firestore-http-basic-authenticator": "self.version",
+        "groton-school/slim-action": "self.version",
+        "groton-school/slim-lti-gae-shim": "self.version",
+        "groton-school/slim-lti-shim": "self.version",
+        "groton-school/slim-lti-skeleton": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "templates/slim-lti-skeleton/src/",
+            "GrotonSchool\\Firestore\\HttpBasicAuthentication\\": "packages/firestore-http-basic-authenticator/src/",
+            "GrotonSchool\\SlimLTI\\": "packages/slim-lti-shim/src/",
+            "GrotonSchool\\SlimLTI\\GAE\\": "packages/slim-lti-gae-shim/src/",
+            "GrotonSchool\\Slim\\Action\\": "packages/slim-action/src/",
+            "GrotonSchool\\Slim\\LTI\\": "packages/slim-lti-shim/src/",
+            "GrotonSchool\\Slim\\LTI\\GAE\\": "packages/slim-lti-gae-shim/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "templates/slim-lti-skeleton/tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "franzl/studio": true,
+            "phpstan/extension-installer": true
+        }
     }
-  ],
-  "require": {
-    "php": "^7.4 || ^8.0",
-    "ext-json": "*",
-    "casbin/casbin": "^4.0",
-    "google/appengine-php-sdk": "^2.2",
-    "google/cloud-firestore": "^1.48",
-    "google/cloud-logging": "^1.32",
-    "guzzlehttp/guzzle": "^7.9",
-    "monolog/monolog": "^2.8",
-    "packbackbooks/lti-1p3-tool": "^6.2",
-    "php-di/php-di": "^7.0",
-    "slim/psr7": "^1.7",
-    "slim/slim": "^4.14",
-    "tuupola/slim-basic-auth": "^3.4",
-    "vlucas/phpdotenv": "^5.6"
-  },
-  "require-dev": {
-    "franzl/studio": "^0.16.0",
-    "friendsofphp/php-cs-fixer": "^3.68",
-    "jangregor/phpstan-prophecy": "^1.0.0",
-    "marcocesarato/php-conventional-changelog": "^1.17",
-    "phpspec/prophecy-phpunit": "^2.0",
-    "phpstan/extension-installer": "^1.2.0",
-    "phpstan/phpstan": "^1.8",
-    "phpunit/phpunit": "^9.5.26",
-    "squizlabs/php_codesniffer": "^3.7",
-    "symplify/monorepo-builder": "^11.2"
-  },
-  "replace": {
-    "groton-school/firestore-http-basic-authenticator": "self.version",
-    "groton-school/slim-lti-gae-shim": "self.version",
-    "groton-school/slim-lti-shim": "self.version",
-    "groton-school/slim-lti-skeleton": "self.version"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "templates/slim-lti-skeleton/src/",
-      "GrotonSchool\\Firestore\\HttpBasicAuthentication\\": "packages/firestore-http-basic-authenticator/src/",
-      "GrotonSchool\\SlimLTI\\": "packages/slim-lti-shim/src/",
-      "GrotonSchool\\SlimLTI\\GAE\\": "packages/slim-lti-gae-shim/src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Tests\\": "templates/slim-lti-skeleton/tests/"
-    }
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "franzl/studio": true,
-      "phpstan/extension-installer": true
-    }
-  }
 }

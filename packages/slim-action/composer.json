@@ -1,0 +1,28 @@
+{
+  "name": "groton-school/slim-action",
+  "authors": [
+    {
+      "name": "Seth Battis",
+      "email": "sbattis@groton.org"
+    }
+  ],
+  "license": "GPL-3.0",
+  "require": {
+    "slim/psr7": "^1.7",
+    "slim/slim": "^4.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "GrotonSchool\\Slim\\Action\\": "src/"
+    }
+  },
+  "scripts": {
+    "release": "conventional-changelog --commit"
+  },
+  "require-dev": {
+    "marcocesarato/php-conventional-changelog": "^1.17"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
