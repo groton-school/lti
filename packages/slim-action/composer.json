@@ -1,5 +1,6 @@
 {
   "name": "groton-school/slim-action",
+  "version": "0.0.0",
   "authors": [
     {
       "name": "Seth Battis",
@@ -20,9 +21,13 @@
     "release": "conventional-changelog --commit"
   },
   "require-dev": {
+    "franzl/studio": "^0.16.0",
     "marcocesarato/php-conventional-changelog": "^1.17"
   },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "franzl/studio": true
+    }
   }
 }
