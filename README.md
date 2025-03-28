@@ -1,17 +1,4 @@
-# groton-school/lti-base
-
-## Install
-
-- Make sure that [gRPC](https://cloud.google.com/php/grpc) is installed so that the current version of Firestore can be used (on macOS, it's worth checking to see if the `pecl` symlink in the active PHP installation is valid, per [this note](https://yarnaudov.com/php-pecl-module-install-warning-mkdir-file-exists-fix.html)).
-- Make sure that [Node](https://nodejs.org/en) is installed, as the deploy script runs on node.
-
-## Deploy
-
-```sh
-composer run-script deploy
-```
-
-On the first deploy, you will be walked through an interactive Google Cloud project creation wizard (or can select an existing Google Cloud project) to which the app will be deployed.
+# groton-school/lti
 
 ## Acknowledgements
 
@@ -25,7 +12,7 @@ Below are a number of resources that I found useful in implementing this:
 - Obviously the [Slim Framework](https://www.slimframework.com/docs/v4/) and their [Slim-Skeleton](https://github.com/slimphp/Slim-Skeleton/tree/main) were helpful starting points for the structure of the Slim app! I find it more useful to bring in the pieces of the skeleton as-needed, rather than starting with the app template.
 - The [LTI Debugger Chrome Extension](https://chromewebstore.google.com/detail/lti-debugger/cpjdeioljkbgkldnbojoagdoiggnlhll) which adds another tab to the Developer Console, which was about the only thing of value that I was able to pull from [1EdTech's LTI Bootcamp](https://github.com/1EdTech/ltibootcamp), which everyone else links to as a great resource. It may prove useful as I get more into the specifics of deep linking?
 
-#### Dynamic Registration
+## Dynamic Registration
 
 Looking ahead, I intend to implement dynamic registration. I am finding the following helpful in this (although the choice between LTI 1.3 Dynamic Registration and LTI 2.0 Dynamic Registration is unclear to me -- the former seems like the path forward, while the latter seems to exist in the wild.)
 
