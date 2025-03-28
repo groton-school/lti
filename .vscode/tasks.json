@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "cd templates/slim-lti-skeleton; node bin/deploy.js -v",
+			"label": "deploy slim-lti-skeleton",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
+		},{
+			"type": "shell",
+			"label": "phpstan slim-lti-skeleton",
+			"command":"cd templates/slim-lti-skeleton; phpstan",
+			"group": {
+				"kind":"build",
+				"isDefault": false
+			}
+		}
+	]
+}

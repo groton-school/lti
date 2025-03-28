@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "cd templates\/slim-lti-skeleton\npnpm run deploy -v"
+    }
+  },
+  "openLogOnRun" : "start"
+}
