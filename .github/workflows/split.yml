@@ -17,8 +17,10 @@ jobs:
         packages:
           - local_path: 'slim-action'
             split_repository: 'lti.slim-action'
-          - local_path: 'slim-lti-gae-shim'
-            split_repository: 'lti.slim-lti-gae-shim'
+          - local_path: 'slim-gae-shim'
+            split_repository: 'lti.slim-gae-shim'
+          - local_path: 'slim-lti-infrastructure-gae  '
+            split_repository: 'lti.slim-lti-infrastructure-gae'
           - local_path: 'slim-lti-shim'
             split_repository: 'lti.slim-lti-shim'
         templates:
