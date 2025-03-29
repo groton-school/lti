@@ -1,22 +1,4 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "shell",
-			"command": "cd templates/slim-lti-gae-skeleton; node bin/deploy.js -v",
-			"label": "deploy slim-lti-gae-skeleton",
-			"group": {
-				"kind": "build",
-				"isDefault": false
-			}
-		},{
-			"type": "shell",
-			"label": "phpstan slim-lti-gae-skeleton",
-			"command":"cd templates/slim-lti-gae-skeleton; phpstan",
-			"group": {
-				"kind":"build",
-				"isDefault": false
-			}
-		}
-	]
+  "version": "2.0.0",
+  "tasks": []
 }

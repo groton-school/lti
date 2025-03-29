@@ -1,4 +1,4 @@
 {
   "version": 2,
-  "paths": ["packages/*", "templates/*"]
+  "paths": ["packages/*"]
 }
