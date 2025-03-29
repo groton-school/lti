@@ -2,19 +2,20 @@
 
 declare(strict_types=1);
 
-namespace GrotonSchool\Slim\Action;
+namespace GrotonSchool\Slim\Actions;
 
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use Slim\Http\Response;
+use Slim\Http\ServerRequest;
 use Slim\Exception\HttpBadRequestException;
 use Slim\Exception\HttpNotFoundException;
 
-abstract class Action
+abstract class AbstractAction
 {
     protected LoggerInterface $logger;
 
-    protected Request $request;
+    protected ServerRequest $request;
 
     protected Response $response;
 
@@ -26,10 +27,9 @@ abstract class Action
     }
 
     /**
-     * @throws HttpNotFoundException
      * @throws HttpBadRequestException
      */
-    public function __invoke(Request $request, Response $response, array $args): Response
+    public function __invoke(ServerRequest $request, Response $response, array $args): ResponseInterface
     {
         $this->request = $request;
         $this->response = $response;
@@ -39,10 +39,9 @@ abstract class Action
     }
 
     /**
-     * @throws DomainRecordNotFoundException
      * @throws HttpBadRequestException
      */
-    abstract protected function action(): Response;
+    abstract protected function action(): ResponseInterface;
 
     /**
      * @return array|object
@@ -81,7 +80,7 @@ abstract class Action
         $this->response->getBody()->write($json);
 
         return $this->response
-                    ->withHeader('Content-Type', 'application/json')
-                    ->withStatus($payload->getStatusCode());
+            ->withHeader('Content-Type', 'application/json')
+            ->withStatus($payload->getStatusCode());
     }
 }

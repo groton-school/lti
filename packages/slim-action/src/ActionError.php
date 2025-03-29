@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GrotonSchool\Slim\Action;
+namespace GrotonSchool\Slim\Actions;
 
 use JsonSerializable;
 
