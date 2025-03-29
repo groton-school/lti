@@ -865,7 +865,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../packages/slim-lti-infrastructure-gae",
-                "reference": "7ecaa5b11d2f25e418679a291778d8350e720d0c"
+                "reference": "0804471f23b26dc8db30e8e2a1dad0b7c47896da"
             },
             "require": {
                 "google/cloud-firestore": "^1.48",
@@ -879,7 +879,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "GrotonSchool\\Slim\\LTI\\GAE\\": "src/"
+                    "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "src/"
                 }
             },
             "scripts": {
