@@ -5,8 +5,9 @@ declare(strict_types=1);
 use App\Application\Handlers\HttpErrorHandler;
 use App\Application\Handlers\ShutdownHandler;
 use App\Application\ResponseEmitter\ResponseEmitter;
-use App\Application\Settings\SettingsInterface;
+use App\Application\Settings;
 use DI\ContainerBuilder;
+use Slim\App;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
 
@@ -38,6 +39,7 @@ $container = $containerBuilder->build();
 
 // Instantiate the app
 AppFactory::setContainer($container);
+/** @var App */
 $app = AppFactory::create();
 $callableResolver = $app->getCallableResolver();
 
@@ -50,7 +52,7 @@ $routes = require __DIR__ . '/../app/routes.php';
 $routes($app);
 
 /** @var SettingsInterface $settings */
-$settings = $container->get(SettingsInterface::class);
+$settings = $container->get(Settings::class);
 
 $displayErrorDetails = $settings->get('displayErrorDetails');
 $logError = $settings->get('logError');
