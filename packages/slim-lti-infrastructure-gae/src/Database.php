@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace GrotonSchool\Slim\LTI\GAE\Infrastructure;
+namespace GrotonSchool\Slim\LTI\Infrastructure\GAE;
 
-use GrotonSchool\Slim\LTI\GAE\Infrastructure\Firestore\FirestoreRegistration;
-use Packback\Lti1p3\Interfaces\IDatabase;
 use Google\Cloud\Firestore\FirestoreClient;
+use GrotonSchool\Slim\LTI\Domain\Registration;
+use GrotonSchool\Slim\LTI\Infrastructure\GAE\Firestore;
+use GrotonSchool\Slim\LTI\Infrastructure\DatabaseInterface;
 use Packback\Lti1p3\Interfaces\ILtiRegistration;
 use Packback\Lti1p3\Interfaces\ILtiDeployment;
 use Packback\Lti1p3\LtiDeployment;
@@ -15,7 +16,7 @@ use Packback\Lti1p3\OidcException;
 /**
  * @see https://github.com/packbackbooks/lti-1-3-php-library/wiki/Laravel-Implementation-Guide#database Working from Packback's wiki example
  */
-class Database implements IDatabase
+class Database implements DatabaseInterface
 {
     private FirestoreClient $firestore;
 
@@ -30,9 +31,9 @@ class Database implements IDatabase
     public function findRegistration(
         string $issuer,
         ?string $clientId = null
-    ): ?FirestoreRegistration {
+    ): ?Firestore\Registration {
         $query = $this->firestore
-            ->collection(FirestoreRegistration::COLLECTION_PATH)
+            ->collection(Firestore\Registration::COLLECTION_PATH)
             ->where('issuer', '=', $issuer);
         if ($clientId) {
             $query = $query->where('client_id', '=', $clientId);
@@ -45,18 +46,9 @@ class Database implements IDatabase
             );
         }
         if ($result->size() == 1) {
-            $registration = $result->rows()[0]->data();
-            return FirestoreRegistration::new()
-                ->setAuthTokenUrl($registration['auth_token_url'])
-                ->setAuthLoginUrl($registration['auth_login_url'])
-                ->setClientId($registration['client_id'])
-                ->setKeySetUrl($registration['key_set_url'])
-                // ->setKid($registration['kid'])
-                ->setIssuer($registration['issuer'])
-                ->setToolPrivateKey($registration['tool_private_key'])
-                ->setDeployments($registration['deployments']);
+            return new Firestore\Registration($result->rows()[0]->data());
         }
-        return false;
+        return null;
     }
 
     public function findRegistrationByIssuer(
@@ -73,11 +65,19 @@ class Database implements IDatabase
     ): ?ILtiDeployment {
         $registration = $this->findRegistration($issuer, $clientId);
         if (!$registration) {
-            return false;
+            return null;
         }
         if ($registration->hasDeployment($deploymentId)) {
             return LtiDeployment::new($deploymentId);
         }
-        return false;
+        return null;
+    }
+
+    public function saveRegistration(Registration $registration): void
+    {
+        $document = $this->firestore
+            ->collection(Firestore\Registration::COLLECTION_PATH)
+            ->newDocument();
+        $document->set($registration->jsonSerialize());
     }
 }
