@@ -5,7 +5,7 @@ declare(strict_types=1);
 use App\Application\Handlers\HttpErrorHandler;
 use App\Application\Handlers\ShutdownHandler;
 use App\Application\ResponseEmitter\ResponseEmitter;
-use App\Application\Settings;
+use App\Application\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Slim\App;
 use Slim\Factory\AppFactory;
@@ -52,7 +52,7 @@ $routes = require __DIR__ . '/../app/routes.php';
 $routes($app);
 
 /** @var SettingsInterface $settings */
-$settings = $container->get(Settings::class);
+$settings = $container->get(SettingsInterface::class);
 
 $displayErrorDetails = $settings->get('displayErrorDetails');
 $logError = $settings->get('logError');
