@@ -24,8 +24,6 @@ jobs:
           - local_path: 'slim-lti-shim'
             split_repository: 'lti.slim-lti-shim'
         templates:
-          - local_path: 'slim-lti-skeleton'
-            split_repository: 'lti.slim-lti-skeleton'
     steps:
       - uses: actions/checkout@v2
       # no tag (packages)

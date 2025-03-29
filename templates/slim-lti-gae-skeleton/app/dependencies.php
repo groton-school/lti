@@ -7,7 +7,6 @@ use DI\ContainerBuilder;
 use GrotonSchool\Slim\GAE;
 use GrotonSchool\Slim\LTI;
 use GrotonSchool\Slim\LTI\Infrastructure;
-use GrotonSchool\Slim\LTI\Application;
 
 return function (ContainerBuilder $containerBuilder) {
     $containerBuilder->addDefinitions([
