@@ -8,6 +8,7 @@
   ],
   "license": "GPL-3.0",
   "require": {
+    "ext-json": "*",
     "psr/http-message": "^2.0",
     "psr/log": "^3.0",
     "slim/http": "^1.4",
