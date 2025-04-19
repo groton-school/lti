@@ -1,37 +1,37 @@
 {
-  "name": "groton-school/slim-action",
-  "description": "Convenience wrapper for Slim framework actions",
-  "version": "0.0.0",
-  "authors": [
-    {
-      "name": "Seth Battis",
-      "email": "sbattis@groton.org"
+    "name": "groton-school/slim-action",
+    "description": "Convenience wrapper for Slim framework actions",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sbattis@groton.org"
+        }
+    ],
+    "license": "GPL-3.0",
+    "require": {
+        "ext-json": "*",
+        "psr/http-message": "^2.0",
+        "psr/log": "^3.0",
+        "slim/http": "^1.4",
+        "slim/slim": "^4.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrotonSchool\\Slim\\Actions\\": "src/"
+        }
+    },
+    "scripts": {
+        "release": "conventional-changelog --commit"
+    },
+    "require-dev": {
+        "franzl/studio": "^0.16.0",
+        "marcocesarato/php-conventional-changelog": "^1.17"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "franzl/studio": true
+        }
     }
-  ],
-  "license": "GPL-3.0",
-  "require": {
-    "ext-json": "*",
-    "psr/http-message": "^2.0",
-    "psr/log": "^3.0",
-    "slim/http": "^1.4",
-    "slim/slim": "^4.14"
-  },
-  "autoload": {
-    "psr-4": {
-      "GrotonSchool\\Slim\\Actions\\": "src/"
-    }
-  },
-  "scripts": {
-    "release": "conventional-changelog --commit"
-  },
-  "require-dev": {
-    "franzl/studio": "^0.16.0",
-    "marcocesarato/php-conventional-changelog": "^1.17"
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": {
-      "franzl/studio": true
-    }
-  }
 }
