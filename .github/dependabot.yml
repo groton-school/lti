@@ -5,16 +5,17 @@
 
 version: 2
 updates:
-  - package-ecosystem: "composer" # See documentation for possible values
+  - package-ecosystem: 'composer' # See documentation for possible values
     directories:
-      - "/"
-      - "/packages/php/*"
+      - '/'
+      - '/packages/php/*'
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
 
-  - package-ecosystem: "npm" # See documentation for possible values
+  - package-ecosystem: 'npm' # See documentation for possible values
     directories:
-      - "/"
-      - "/packages/ts/*"
+      - '/'
+      - '/packages/ts/*'
     schedule:
-      interval: "monthly"
+      interval: 'monthly'
+    target-branch: dev
