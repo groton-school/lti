@@ -1,9 +1,0 @@
-{
-  "actions" : {
-    "run" : {
-      "enabled" : true,
-      "script" : "cd templates\/slim-lti-skeleton\nphpstan"
-    }
-  },
-  "openLogOnRun" : "start"
-}
