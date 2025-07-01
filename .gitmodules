@@ -13,3 +13,12 @@
 [submodule "packages/slim-lti-shim"]
 	path = packages/slim-lti-shim
 	url = git@github.com:groton-school/lti.slim-lti-shim.git
+[submodule "templates/slim-gae-skeleton"]
+	path = templates/slim-gae-skeleton
+	url = git@github.com:groton-school/slim-gae-skeleton.git
+[submodule "templates/slim-lti-skeleton"]
+	path = templates/slim-lti-skeleton
+	url = https://github.com/groton-school/slim-lti-skeleton
+[submodule "templates/slim-lti-gae-skeleton"]
+	path = templates/slim-lti-gae-skeleton
+	url = https://github.com/groton-school/slim-lti-gae-skeleton
