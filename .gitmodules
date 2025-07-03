@@ -16,9 +16,9 @@
 [submodule "templates/slim-gae-skeleton"]
 	path = templates/slim-gae-skeleton
 	url = git@github.com:groton-school/slim-gae-skeleton.git
-[submodule "templates/slim-lti-skeleton"]
-	path = templates/slim-lti-skeleton
-	url = git@github.com:groton-school/slim-lti-skeleton.git
 [submodule "templates/slim-lti-gae-skeleton"]
 	path = templates/slim-lti-gae-skeleton
 	url = git@github.com:groton-school/slim-lti-gae-skeleton.git
+[submodule "templates/slim-lti-skeleton"]
+	path = templates/slim-lti-skeleton
+	url = git@github.com:groton-school/slim-lti-skeleton.git
