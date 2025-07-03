@@ -1,5 +1,5 @@
 {
-  "name": "groton-school/slim-lti-gae-skeleton",
+  "name": "examples/lti-gae",
   "description": "A Slim Framework skeleton LTI Tool for rapid development on Google App Engine",
   "keywords": [
     "microframework",
@@ -14,16 +14,6 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Josh Lockhart",
-      "email": "info@joshlockhart.com",
-      "homepage": "http://www.joshlockhart.com/"
-    },
-    {
-      "name": "Pierre Berube",
-      "email": "pierre@lgse.com",
-      "homepage": "http://www.lgse.com/"
-    },
-    {
       "name": "Seth Battis",
       "email": "sbattis@groton.org",
       "homepage": "https://www.groton.org"
@@ -36,8 +26,8 @@
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
     "groton-school/slim-gae-shim": "^1.0",
-    "groton-school/slim-lti-infrastructure-gae": "dev-slim-lti-shim-test",
-    "groton-school/slim-lti-shim": "dev-feat/oidc-without-chips",
+    "groton-school/slim-lti-infrastructure-gae": "^1.0",
+    "groton-school/slim-lti-shim": "^1.2",
     "monolog/monolog": "^2.9",
     "odan/session": "^6.3",
     "php-di/php-di": "^6.4",
