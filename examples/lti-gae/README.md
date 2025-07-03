@@ -1,56 +1,27 @@
-# Slim Framework 4 on Google App Engine Skeleton Application
+# LTI Tool running on Google App Engine
 
-[![Coverage Status](https://coveralls.io/repos/github/groton-school/slim-lti-gae-skeleton/badge.svg?branch=master)](https://coveralls.io/github/groton-school/slim-lti-gae-skeleton?branch=master)
+## Notes
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application running on Google App Engine. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses Google Cloud Logging.
+This project was created from the [slim-lti-gae-skeleton](https://github.com/groton-school/slim-lti-gae-skeleton#readme):
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
-
-## Install the Application
-
-Run this command from the directory in which you want to install your new Slim Framework application. You will require PHP 7.4 or newer.
-
-```bash
-composer create-project --stability dev groton-school/slim-lti-gae-skeleton [my-app-name]
+```sh
+composer create-project --stability dev groton-school/slim-lti-gae-skeleton examples/lti-gae
 ```
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+In [app/settings.php](./app/settings.php), `$TOOL_NAME` was updated, and then it was ready to be deployed to Google App Engine:
 
-- Point your virtual host document root to your new application's `public/` directory.
-- Ensure `logs/` is web writable.
+````console
+> pnpm run deploy
+✔ Google Cloud project name LTI Google App Engine example
+✔ Google Cloud project unique identifier <unique id>
+Install your LTI by going adding an LTI Registration in Developer Keys for https://<unique id>.uk.r.appspot.com/lti/register
 
-To run the application in development, you can run these commands
+If you haven't done that before, follow these directions: https://community.canvaslms.com/t5/Admin-Guide/How-do-I-add-a-developer-LTI-Registration-key-for-an-account/ta-p/601370
 
-```bash
-cd [my-app-name]
-composer start
-```
+You will then need to enable the app following these directions: https://community.canvaslms.com/t5/Admin-Guide/How-do-I-configure-an-external-app-for-an-account-using-a-client/ta-p/202```
+````
 
-Deploying the application to Google App Engine requires both [gcloud](https://cloud.google.com/sdk/docs/install) and [Node](https://nodejs.org) as prerequisites. With both of those tools installed, install the Node package dependencies.
+At this point, as the console indicates, you can follow the linked directions to install the LTI in Canvas (or another LMS). This LTI creates a single placement in course navigation that will display the contents of the LTI Launch Message when launched.
 
-```bash
-npm install
-```
-
-Deploy the app (which will take you through an interactive wizard to reuse or create and configure a new Google Cloud project):
-
-```bash
-node bin/deploy.js
-```
-
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-
-```bash
-cd [my-app-name]
-docker-compose up -d
-```
-
-After that, open `http://localhost:8080` in your browser.
-
-Run this command in the application directory to run the test suite
-
-```bash
-composer test
-```
-
-That's it! Now go build something cool.
+- The placement configuration is done in [app/settings.php](./app/settings.php) by the `Settings::TOOL_REGISTRATION` property, specifically `Settings::TOOL_REGISTRATION[https://purl.imsglobal.org/spec/lti-tool-configuration][messages][placements]`.
+- The behavior of the app is described in [src/Application/Handlers/LaunchHandler.php](./src/Application/Handlers/LaunchHandler.php).
