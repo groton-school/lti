@@ -19,7 +19,7 @@ class LaunchHandler implements LaunchHandlerInterface
         */
         $renderer = new PhpRenderer(__DIR__ . '/../../../views');
         $data = $launch->getLaunchData();
-        return $renderer->render($response, 'launch.php', [
+        return $renderer->render($response, 'launchData.php', [
             'messageType' => $data[LtiConstants::MESSAGE_TYPE],
             'launchData' => $data
         ]);
