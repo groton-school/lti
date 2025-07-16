@@ -1,7 +1,7 @@
 import gcloud from '@battis/partly-gcloudy';
 import { Colors } from '@battis/qui-cli.colors';
 import { Core } from '@battis/qui-cli.core';
-import { Env } from '@battis/qui-cli.env';
+import { OP } from '@battis/qui-cli.env/1Password.js';
 import { Log } from '@battis/qui-cli.log';
 import { Root } from '@battis/qui-cli.root';
 import { Shell } from '@battis/qui-cli.shell';
@@ -9,7 +9,7 @@ import path from 'node:path';
 
 (async () => {
   Root.configure({ root: path.dirname(import.meta.dirname) });
-  Env.configure();
+  OP.configure();
   const {
     values: { force }
   } = await Core.init({
