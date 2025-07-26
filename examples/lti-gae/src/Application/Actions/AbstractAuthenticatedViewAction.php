@@ -7,10 +7,10 @@ namespace App\Application\Actions;
 use App\Domain\LTI\LaunchDataRepositoryInterface;
 use App\Domain\User\UserRepositoryInterface;
 use App\Domain\User\UsersTrait;
-use GrotonSchool\Slim\Actions\AbstractAction as ActionsAbstractAction;
+use GrotonSchool\Slim\Actions\AbstractAction;
 use Psr\Http\Message\ResponseInterface;
 
-abstract class AbstractAuthenticatedViewAction extends ActionsAbstractAction
+abstract class AbstractAuthenticatedViewAction extends AbstractAction
 {
     use UsersTrait;
     use ViewsTrait;
