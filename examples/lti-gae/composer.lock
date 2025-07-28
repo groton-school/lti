@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "139903ad6151a76f7618c85b4189b218",
+    "content-hash": "a9d60ee4ed83e076293bba8e39a44258",
     "packages": [
         {
             "name": "brick/math",
@@ -686,16 +686,16 @@
         },
         {
             "name": "groton-school/slim-action",
-            "version": "dev-dev",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-action.git",
-                "reference": "f1b74416f75d77fe4e3c0e99d68e3ef14038084a"
+                "reference": "05654b1f88ce83799054c6310267fcb565b255cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/f1b74416f75d77fe4e3c0e99d68e3ef14038084a",
-                "reference": "f1b74416f75d77fe4e3c0e99d68e3ef14038084a",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/05654b1f88ce83799054c6310267fcb565b255cb",
+                "reference": "05654b1f88ce83799054c6310267fcb565b255cb",
                 "shasum": ""
             },
             "require": {
@@ -729,22 +729,22 @@
             "description": "Convenience wrapper for Slim framework actions",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-action/issues",
-                "source": "https://github.com/groton-school/lti.slim-action/tree/dev"
+                "source": "https://github.com/groton-school/lti.slim-action/tree/v2.0.1"
             },
-            "time": "2025-07-26T22:34:38+00:00"
+            "time": "2025-07-26T22:59:20+00:00"
         },
         {
             "name": "groton-school/slim-gae-shim",
-            "version": "dev-dev",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-gae-shim.git",
-                "reference": "f6945ce77c17054dcf54b33cdb24c7db0abe5461"
+                "reference": "1508b1f3c80ca29a88ba2a1309426c67c7cfc901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-gae-shim/zipball/f6945ce77c17054dcf54b33cdb24c7db0abe5461",
-                "reference": "f6945ce77c17054dcf54b33cdb24c7db0abe5461",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-gae-shim/zipball/1508b1f3c80ca29a88ba2a1309426c67c7cfc901",
+                "reference": "1508b1f3c80ca29a88ba2a1309426c67c7cfc901",
                 "shasum": ""
             },
             "require": {
@@ -775,27 +775,27 @@
             "description": "Shim for Slim Skelton to run on Google App Engine",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-gae-shim/issues",
-                "source": "https://github.com/groton-school/lti.slim-gae-shim/tree/dev"
+                "source": "https://github.com/groton-school/lti.slim-gae-shim/tree/v1.0.1"
             },
-            "time": "2025-07-26T22:41:06+00:00"
+            "time": "2025-07-26T23:07:26+00:00"
         },
         {
             "name": "groton-school/slim-lti-infrastructure-gae",
-            "version": "dev-dev",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae.git",
-                "reference": "387094c63dad416f9f47adec4b867be1426e8d0e"
+                "reference": "c69e5829a68e3be6e4e3f80d608c38c7e14b521d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-infrastructure-gae/zipball/387094c63dad416f9f47adec4b867be1426e8d0e",
-                "reference": "387094c63dad416f9f47adec4b867be1426e8d0e",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-infrastructure-gae/zipball/c69e5829a68e3be6e4e3f80d608c38c7e14b521d",
+                "reference": "c69e5829a68e3be6e4e3f80d608c38c7e14b521d",
                 "shasum": ""
             },
             "require": {
                 "google/cloud-firestore": "^1.48",
-                "groton-school/slim-lti-shim": "dev-dev",
+                "groton-school/slim-lti-shim": "^2.0.3",
                 "packbackbooks/lti-1p3-tool": "^6.3"
             },
             "require-dev": {
@@ -821,28 +821,28 @@
             "description": "Shim to implement packbackbooks/lti-1p3-tool storage interfaces in Firestore",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/tree/dev"
+                "source": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/tree/v1.0.3"
             },
-            "time": "2025-07-26T22:43:41+00:00"
+            "time": "2025-07-26T23:05:37+00:00"
         },
         {
             "name": "groton-school/slim-lti-shim",
-            "version": "dev-dev",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
-                "reference": "e5bbea2d53948d468a960e04e6a8426871c14beb"
+                "reference": "448504bd9de689d83aa47383f102c13b6743907d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/e5bbea2d53948d468a960e04e6a8426871c14beb",
-                "reference": "e5bbea2d53948d468a960e04e6a8426871c14beb",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/448504bd9de689d83aa47383f102c13b6743907d",
+                "reference": "448504bd9de689d83aa47383f102c13b6743907d",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "dev-dev",
+                "groton-school/slim-action": "^2.0.1",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -872,9 +872,9 @@
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/dev"
+                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/v2.0.3"
             },
-            "time": "2025-07-26T22:38:00+00:00"
+            "time": "2025-07-26T23:02:21+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -3384,12 +3384,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "groton-school/slim-action": 20,
-        "groton-school/slim-gae-shim": 20,
-        "groton-school/slim-lti-infrastructure-gae": 20,
-        "groton-school/slim-lti-shim": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
