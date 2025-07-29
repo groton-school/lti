@@ -41,7 +41,9 @@ class FirestoreUserRepository implements UserRepositoryInterface
 
     public function createUser(string $consumerHostname, string $id, array $data = []): User
     {
-        return new User($this->getLocator($consumerHostname, $id), ['id' => $id, ...$data]);
+        $user = new User($this->getLocator($consumerHostname, $id), ['id' => $id, ...$data]);
+        $this->saveUser($user, true);
+        return $user;
     }
 
     public function saveUser(User $user, bool $force = false): bool

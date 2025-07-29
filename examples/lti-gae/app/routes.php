@@ -2,12 +2,14 @@
 
 declare(strict_types=1);
 
+use App\Application\Actions\AppStartAction;
+use App\Application\Actions\ThirdPartyCookieAction;
+use App\Application\Middleware\Authenticated;
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
 use GrotonSchool\Slim\LTI\Actions\JWKSAction;
 use GrotonSchool\Slim\LTI\Actions\LaunchAction;
 use GrotonSchool\Slim\LTI\Actions\LoginAction;
 use GrotonSchool\Slim\LTI\Actions\RegistrationStartAction;
-use GrotonSchool\Slim\LTI\Actions\ThirdPartyCookieAction;
 use Odan\Session\Middleware\SessionStartMiddleware;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
@@ -22,5 +24,10 @@ return function (App $app) {
         $lti->get('/jwks', JWKSAction::class);
         $lti->get('/register', RegistrationStartAction::class);
         $lti->post('/login', LoginAction::class);
+        $lti->get('/third-party-cookies', ThirdPartyCookieAction::class);
     })->add(SessionStartMiddleware::class);
+
+    $app->get('/', AppStartAction::class)
+        ->add(Authenticated::class)
+        ->add(SessionStartMiddleware::class);
 };

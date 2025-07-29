@@ -28,6 +28,7 @@ use Packback\Lti1p3\Interfaces\ILtiServiceConnector;
 use Packback\Lti1p3\LtiServiceConnector;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
+use Slim\Views\PhpRenderer;
 
 return function (ContainerBuilder $containerBuilder) {
     $containerBuilder->addDefinitions([
@@ -77,5 +78,9 @@ return function (ContainerBuilder $containerBuilder) {
             $options = $container->get(SettingsInterface::class)->get(SessionInterface::class);
             return new PhpSession($options);
         },
+
+        PhpRenderer::class => function () {
+            return new PhpRenderer(__DIR__ . '/../views');
+        }
     ]);
 };
