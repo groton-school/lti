@@ -16,6 +16,3 @@
 [submodule "templates/slim-lti-gae-skeleton"]
 	path = templates/slim-lti-gae-skeleton
 	url = git@github.com:groton-school/slim-lti-gae-skeleton.git
-[submodule "packages/slim-lti-third-party-cookies"]
-	path = packages/slim-lti-third-party-cookies
-	url = git@github.com:groton-school/slim-lti-third-party-cookies.git
