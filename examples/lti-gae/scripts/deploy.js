@@ -1,15 +1,15 @@
+import '@qui-cli/env/1Password.js';
+
 import gcloud from '@battis/partly-gcloudy';
-import { Colors } from '@battis/qui-cli.colors';
-import { Core } from '@battis/qui-cli.core';
-import { OP } from '@battis/qui-cli.env/1Password.js';
-import { Log } from '@battis/qui-cli.log';
-import { Root } from '@battis/qui-cli.root';
-import { Shell } from '@battis/qui-cli.shell';
+import { Colors } from '@qui-cli/colors';
+import { Core } from '@qui-cli/core';
+import { Log } from '@qui-cli/log';
+import { Root } from '@qui-cli/root';
+import { Shell } from '@qui-cli/shell';
 import path from 'node:path';
 
 (async () => {
   Root.configure({ root: path.dirname(import.meta.dirname) });
-  OP.configure();
   const {
     values: { force }
   } = await Core.init({
@@ -20,7 +20,6 @@ import path from 'node:path';
       }
     }
   });
-  await Core.run();
   const configure = force || !process.env.PROJECT;
 
   const { project, appEngine } = await gcloud.batch.appEngineDeployAndCleanup({
