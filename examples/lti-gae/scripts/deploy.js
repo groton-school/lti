@@ -40,7 +40,7 @@ import path from 'node:path';
   }
 
   Log.info(
-    `Install your LTI by going adding an LTI Registration in Developer Keys for ${Colors.url(
+    `Install your LTI by adding an LTI Registration in Developer Keys for ${Colors.url(
       `https://${appEngine.defaultHostname}/lti/register`
     )}\n\nIf you haven't done that before, follow these directions: ${Colors.url(
       'https://community.canvaslms.com/t5/Admin-Guide/How-do-I-add-a-developer-LTI-Registration-key-for-an-account/ta-p/601370'
