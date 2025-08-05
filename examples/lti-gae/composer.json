@@ -22,10 +22,16 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "type": "project",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/battis/dflydev-fig-cookies.git"
+    }
+  ],
   "require": {
     "php": "^7.4 || ^8.0",
     "ext-json": "*",
-    "dflydev/fig-cookies": "^3.1",
+    "dflydev/fig-cookies": "dev-feat/chips",
     "groton-school/slim-action": "^2.0.1",
     "groton-school/slim-gae-shim": "^1.0.1",
     "groton-school/slim-lti-infrastructure-gae": "^1.0.2",

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Application\Handlers;
 
+use App\Application\Actions\ThirdPartyCookieAction;
+use App\Application\Actions\ValidateSessionAction;
 use App\Domain\User\UserRepositoryInterface;
 use Dflydev\FigCookies\FigResponseCookies;
 use Dflydev\FigCookies\Modifier\SameSite;
@@ -17,7 +19,6 @@ use Psr\Log\LoggerInterface;
 
 class LaunchHandler implements LaunchHandlerInterface
 {
-    public const THIRD_PARTY_COOKIE = 'third-party-cookie';
     public const LAUNCH_ID = self::class . '::launchId';
 
     public function __construct(
@@ -39,13 +40,14 @@ class LaunchHandler implements LaunchHandlerInterface
         }
         return FigResponseCookies::set(
             $response,
-            SetCookie::create(LaunchHandler::THIRD_PARTY_COOKIE)
+            SetCookie::create(ThirdPartyCookieAction::COOKIE_NAME)
                 ->withValue('true')
                 ->withPath('/')
                 ->withMaxAge(3600)
                 ->withSecure()
                 ->withSameSite(SameSite::none())
+                ->withPartitioned()
         )
-            ->withAddedHeader('Location', '/lti/third-party-cookies?session=' . session_id());
+            ->withAddedHeader('Location', '/lti/third-party-cookies?' . ValidateSessionAction::PARAM_NAME . '=' . session_id());
     }
 }

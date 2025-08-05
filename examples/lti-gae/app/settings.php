@@ -76,8 +76,7 @@ return function (ContainerBuilder $containerBuilder) {
                     'lifetime' => 60 * 60 * 24,
                     'cookie_samesite' => 'None',
                     'secure' => true,
-                    'httponly' => true,
-                    'partitioned' => true
+                    'httponly' => true
                 ]
 
             ]);

@@ -3,8 +3,12 @@
 declare(strict_types=1);
 
 use App\Application\Actions\AppStartAction;
+use App\Application\Actions\FirstPartyLaunchAction;
+use App\Application\Actions\RequestStorageAccessAction;
 use App\Application\Actions\ThirdPartyCookieAction;
+use App\Application\Actions\ValidateSessionAction;
 use App\Application\Middleware\Authenticated;
+use App\Application\Middleware\PartitionedSession;
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
 use GrotonSchool\Slim\LTI\Actions\JWKSAction;
 use GrotonSchool\Slim\LTI\Actions\LaunchAction;
@@ -25,9 +29,15 @@ return function (App $app) {
         $lti->get('/register', RegistrationStartAction::class);
         $lti->post('/login', LoginAction::class);
         $lti->get('/third-party-cookies', ThirdPartyCookieAction::class);
-    })->add(SessionStartMiddleware::class);
+        $lti->get('/first-party-launch', FirstPartyLaunchAction::class);
+        $lti->get('/request-storage-access', RequestStorageAccessAction::class);
+        $lti->get('/validate-session', ValidateSessionAction::class);
+    })
+        ->add(SessionStartMiddleware::class)
+        ->add(PartitionedSession::class);
 
     $app->get('/', AppStartAction::class)
         ->add(Authenticated::class)
-        ->add(SessionStartMiddleware::class);
+        ->add(SessionStartMiddleware::class)
+        ->add(PartitionedSession::class);
 };

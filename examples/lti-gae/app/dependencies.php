@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Application\Handlers\LaunchHandler;
+use App\Application\Settings\Settings;
 use App\Application\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Google\Cloud\Logging\LoggingClient;
@@ -79,8 +80,10 @@ return function (ContainerBuilder $containerBuilder) {
             return new PhpSession($options);
         },
 
-        PhpRenderer::class => function () {
-            return new PhpRenderer(__DIR__ . '/../views');
+        PhpRenderer::class => function (ContainerInterface $container) {
+            return new PhpRenderer(__DIR__ . '/../views', [
+                'tool_name' => $container->get(SettingsInterface::class)->get(Settings::TOOL_NAME)
+            ]);
         }
     ]);
 };

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33f043873b338b7cfd227fc95ef951da",
+    "content-hash": "12d7196b849eb07461e5c75dfa464c26",
     "packages": [
         {
             "name": "brick/math",
@@ -68,16 +68,16 @@
         },
         {
             "name": "dflydev/fig-cookies",
-            "version": "v3.1.0",
+            "version": "dev-feat/chips",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dflydev/dflydev-fig-cookies.git",
-                "reference": "ebe6c15c9895fc490efe620ad734c8ef4a85bdb0"
+                "url": "https://github.com/battis/dflydev-fig-cookies.git",
+                "reference": "cdd564a89f80df24210b85f9feed911f8d4ef0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-fig-cookies/zipball/ebe6c15c9895fc490efe620ad734c8ef4a85bdb0",
-                "reference": "ebe6c15c9895fc490efe620ad734c8ef4a85bdb0",
+                "url": "https://api.github.com/repos/battis/dflydev-fig-cookies/zipball/cdd564a89f80df24210b85f9feed911f8d4ef0ff",
+                "reference": "cdd564a89f80df24210b85f9feed911f8d4ef0ff",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +106,11 @@
                     "Dflydev\\FigCookies\\": "src/Dflydev/FigCookies"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Dflydev\\FigCookies\\": "tests/Dflydev/FigCookies"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -123,10 +127,9 @@
                 "psr7"
             ],
             "support": {
-                "issues": "https://github.com/dflydev/dflydev-fig-cookies/issues",
-                "source": "https://github.com/dflydev/dflydev-fig-cookies/tree/v3.1.0"
+                "source": "https://github.com/battis/dflydev-fig-cookies/tree/feat/chips"
             },
-            "time": "2023-07-18T20:41:43+00:00"
+            "time": "2025-08-05T12:55:21+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -376,16 +379,16 @@
         },
         {
             "name": "google/cloud-firestore",
-            "version": "v1.52.0",
+            "version": "v1.53.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-firestore.git",
-                "reference": "45f5e7520251fe7ddc13372c6687617963446a74"
+                "reference": "5e37fa25da12e07b3b30bfa9bed38e409d296c2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-firestore/zipball/45f5e7520251fe7ddc13372c6687617963446a74",
-                "reference": "45f5e7520251fe7ddc13372c6687617963446a74",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-firestore/zipball/5e37fa25da12e07b3b30bfa9bed38e409d296c2b",
+                "reference": "5e37fa25da12e07b3b30bfa9bed38e409d296c2b",
                 "shasum": ""
             },
             "require": {
@@ -427,9 +430,9 @@
             ],
             "description": "Cloud Firestore Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-firestore/tree/v1.52.0"
+                "source": "https://github.com/googleapis/google-cloud-php-firestore/tree/v1.53.0"
             },
-            "time": "2025-07-18T20:06:03+00:00"
+            "time": "2025-08-01T22:55:44+00:00"
         },
         {
             "name": "google/cloud-logging",
@@ -1522,16 +1525,16 @@
         },
         {
             "name": "odan/session",
-            "version": "6.3.0",
+            "version": "6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/odan/session.git",
-                "reference": "632366f11acb70cdfdcff1280684584a36d6b59c"
+                "reference": "fcd39d49f50d7809bb021c1189b755b19a5a55e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/odan/session/zipball/632366f11acb70cdfdcff1280684584a36d6b59c",
-                "reference": "632366f11acb70cdfdcff1280684584a36d6b59c",
+                "url": "https://api.github.com/repos/odan/session/zipball/fcd39d49f50d7809bb021c1189b755b19a5a55e9",
+                "reference": "fcd39d49f50d7809bb021c1189b755b19a5a55e9",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1545,7 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3",
-                "middlewares/utils": "^3",
+                "middlewares/utils": "^3 || ^4",
                 "nyholm/psr7": "^1.5",
                 "phpstan/phpstan": "^2",
                 "phpunit/phpunit": "^11",
@@ -1566,9 +1569,9 @@
             ],
             "support": {
                 "issues": "https://github.com/odan/session/issues",
-                "source": "https://github.com/odan/session/tree/6.3.0"
+                "source": "https://github.com/odan/session/tree/6.4.1"
             },
-            "time": "2024-12-15T13:21:05+00:00"
+            "time": "2025-07-29T20:20:33+00:00"
         },
         {
             "name": "packbackbooks/lti-1p3-tool",
@@ -3446,7 +3449,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "dflydev/fig-cookies": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
