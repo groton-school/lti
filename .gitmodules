@@ -1,9 +1,6 @@
 [submodule "packages/lti-registration-builder"]
 	path = packages/lti-registration-builder
 	url = git@github.com:groton-school/lti.lti-registration-builder.git
-[submodule "packages/slim-action"]
-	path = packages/slim-action
-	url = git@github.com:groton-school/lti.slim-action.git
 [submodule "packages/slim-gae-shim"]
 	path = packages/slim-gae-shim
 	url = git@github.com:groton-school/lti.slim-gae-shim.git
