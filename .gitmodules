@@ -10,9 +10,9 @@
 [submodule "packages/slim-lti-shim"]
 	path = packages/slim-lti-shim
 	url = git@github.com:groton-school/lti.slim-lti-shim.git
-[submodule "templates/slim-lti-gae-skeleton"]
-	path = templates/slim-skeleton/slim-lti-gae-skeleton
-	url = git@github.com:groton-school/slim-lti-gae-skeleton.git
 [submodule "packages/slim-lti-partitioned-session"]
 	path = packages/slim-lti-partitioned-session
 	url = git@github.com:groton-school/slim-lti-partitioned-session.git
+[submodule "templates/slim-skeleton"]
+	path = templates/slim-skeleton
+	url = git@github.com:groton-school/slim-skeleton.git
