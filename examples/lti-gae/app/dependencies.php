@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use App\Application\Handlers\LaunchHandler;
 use App\Application\Settings\Settings;
 use App\Application\Settings\SettingsInterface;
 use DI\ContainerBuilder;
@@ -19,6 +18,7 @@ use GrotonSchool\Slim\LTI\Infrastructure\CookieInterface;
 use GrotonSchool\Slim\LTI\Infrastructure\DatabaseInterface;
 use GrotonSchool\Slim\LTI\Infrastructure\GAE\Cache;
 use GrotonSchool\Slim\LTI\Infrastructure\GAE\Database;
+use GrotonSchool\Slim\LTI\PartitionedSession\Handlers\LaunchHandler;
 use Odan\Session\PhpSession;
 use Odan\Session\SessionInterface;
 use Odan\Session\SessionManagerInterface;

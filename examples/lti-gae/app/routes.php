@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 use App\Application\Actions\AppStartAction;
-use App\Application\Actions\FirstPartyLaunchAction;
-use App\Application\Actions\RequestStorageAccessAction;
-use App\Application\Actions\ThirdPartyCookieAction;
-use App\Application\Actions\ValidateSessionAction;
 use App\Application\Middleware\Authenticated;
-use App\Application\Middleware\PartitionedSession;
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
 use GrotonSchool\Slim\LTI\Actions\JWKSAction;
 use GrotonSchool\Slim\LTI\Actions\LaunchAction;
 use GrotonSchool\Slim\LTI\Actions\LoginAction;
 use GrotonSchool\Slim\LTI\Actions\RegistrationStartAction;
+use GrotonSchool\Slim\LTI\PartitionedSession\Actions\FirstPartyLaunchAction;
+use GrotonSchool\Slim\LTI\PartitionedSession\Actions\RequestStorageAccessAction;
+use GrotonSchool\Slim\LTI\PartitionedSession\Actions\ThirdPartyCookieAction;
+use GrotonSchool\Slim\LTI\PartitionedSession\Actions\ValidateSessionAction;
+use GrotonSchool\Slim\LTI\PartitionedSession\Middleware\PartitionedSession;
 use Odan\Session\Middleware\SessionStartMiddleware;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;

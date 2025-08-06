@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12d7196b849eb07461e5c75dfa464c26",
+    "content-hash": "57d7260a036e62cd74af47d06c509a26",
     "packages": [
         {
             "name": "brick/math",
@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/battis/dflydev-fig-cookies.git",
-                "reference": "cdd564a89f80df24210b85f9feed911f8d4ef0ff"
+                "reference": "dcae68384ba342483ea9138c7402e3a46456b853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/battis/dflydev-fig-cookies/zipball/cdd564a89f80df24210b85f9feed911f8d4ef0ff",
-                "reference": "cdd564a89f80df24210b85f9feed911f8d4ef0ff",
+                "url": "https://api.github.com/repos/battis/dflydev-fig-cookies/zipball/dcae68384ba342483ea9138c7402e3a46456b853",
+                "reference": "dcae68384ba342483ea9138c7402e3a46456b853",
                 "shasum": ""
             },
             "require": {
@@ -129,7 +129,7 @@
             "support": {
                 "source": "https://github.com/battis/dflydev-fig-cookies/tree/feat/chips"
             },
-            "time": "2025-08-05T12:55:21+00:00"
+            "time": "2025-08-06T11:37:31+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -751,16 +751,16 @@
         },
         {
             "name": "groton-school/slim-action",
-            "version": "2.0.1",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-action.git",
-                "reference": "05654b1f88ce83799054c6310267fcb565b255cb"
+                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/05654b1f88ce83799054c6310267fcb565b255cb",
-                "reference": "05654b1f88ce83799054c6310267fcb565b255cb",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-action/zipball/7dbfee36c55639421f1d1184084ce83eb6f39c96",
+                "reference": "7dbfee36c55639421f1d1184084ce83eb6f39c96",
                 "shasum": ""
             },
             "require": {
@@ -771,8 +771,7 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "franzl/studio": "^0.16.0",
-                "friendsofphp/php-cs-fixer": "^3.76",
+                "friendsofphp/php-cs-fixer": "^3.85",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -794,9 +793,9 @@
             "description": "Convenience wrapper for Slim framework actions",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-action/issues",
-                "source": "https://github.com/groton-school/lti.slim-action/tree/v2.0.1"
+                "source": "https://github.com/groton-school/lti.slim-action/tree/dev"
             },
-            "time": "2025-07-26T22:59:20+00:00"
+            "time": "2025-08-06T12:32:09+00:00"
         },
         {
             "name": "groton-school/slim-gae-shim",
@@ -846,25 +845,25 @@
         },
         {
             "name": "groton-school/slim-lti-infrastructure-gae",
-            "version": "1.0.3",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae.git",
-                "reference": "c69e5829a68e3be6e4e3f80d608c38c7e14b521d"
+                "reference": "28a2b236e618fa28f8cc0350d159ac37c3570bb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-infrastructure-gae/zipball/c69e5829a68e3be6e4e3f80d608c38c7e14b521d",
-                "reference": "c69e5829a68e3be6e4e3f80d608c38c7e14b521d",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-infrastructure-gae/zipball/28a2b236e618fa28f8cc0350d159ac37c3570bb7",
+                "reference": "28a2b236e618fa28f8cc0350d159ac37c3570bb7",
                 "shasum": ""
             },
             "require": {
                 "google/cloud-firestore": "^1.48",
-                "groton-school/slim-lti-shim": "^2.0.3",
+                "groton-school/slim-lti-shim": "dev-dev",
                 "packbackbooks/lti-1p3-tool": "^6.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.76",
+                "friendsofphp/php-cs-fixer": "^3.85",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -886,28 +885,77 @@
             "description": "Shim to implement packbackbooks/lti-1p3-tool storage interfaces in Firestore",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/tree/v1.0.3"
+                "source": "https://github.com/groton-school/lti.slim-lti-infrastructure-gae/tree/dev"
             },
-            "time": "2025-07-26T23:05:37+00:00"
+            "time": "2025-08-06T13:37:55+00:00"
         },
         {
-            "name": "groton-school/slim-lti-shim",
-            "version": "2.0.3",
+            "name": "groton-school/slim-lti-partitioned-session",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
-                "reference": "448504bd9de689d83aa47383f102c13b6743907d"
+                "url": "https://github.com/groton-school/slim-lti-partitioned-session.git",
+                "reference": "544c9b8c4fe43cbacbbc6d6e254ca62467d233c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/448504bd9de689d83aa47383f102c13b6743907d",
-                "reference": "448504bd9de689d83aa47383f102c13b6743907d",
+                "url": "https://api.github.com/repos/groton-school/slim-lti-partitioned-session/zipball/544c9b8c4fe43cbacbbc6d6e254ca62467d233c1",
+                "reference": "544c9b8c4fe43cbacbbc6d6e254ca62467d233c1",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/fig-cookies": "dev-feat/chips",
+                "groton-school/slim-lti-shim": "dev-dev",
+                "odan/session": "^6.4",
+                "psr/http-message": "^2.0",
+                "slim/http": "^1.4",
+                "slim/php-view": "^3.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.85",
+                "marcocesarato/php-conventional-changelog": "^1.17"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrotonSchool\\Slim\\LTI\\PartitionedSession\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Seth Battis",
+                    "email": "sbattis@groton.org"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/groton-school/slim-lti-partitioned-session/issues",
+                "source": "https://github.com/groton-school/slim-lti-partitioned-session/tree/main"
+            },
+            "time": "2025-08-06T13:42:38+00:00"
+        },
+        {
+            "name": "groton-school/slim-lti-shim",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/groton-school/lti.slim-lti-shim.git",
+                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/groton-school/lti.slim-lti-shim/zipball/b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
+                "reference": "b015c048f919c7381bb0d4b9a6d40cd57b892fc8",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "groton-school/slim-action": "^2.0.1",
+                "groton-school/slim-action": "dev-dev",
                 "packbackbooks/lti-1p3-tool": "^6.3",
                 "php-di/php-di": "^6.0",
                 "slim/http": "^1.4",
@@ -915,7 +963,7 @@
                 "slim/slim": "^4.14"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.76",
+                "friendsofphp/php-cs-fixer": "^3.85",
                 "marcocesarato/php-conventional-changelog": "^1.17"
             },
             "type": "library",
@@ -937,9 +985,9 @@
             "description": "Shim to use packbackbooks/lti-1p3-tool in a Slim Skeleton app",
             "support": {
                 "issues": "https://github.com/groton-school/lti.slim-lti-shim/issues",
-                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/v2.0.3"
+                "source": "https://github.com/groton-school/lti.slim-lti-shim/tree/dev"
             },
-            "time": "2025-07-26T23:02:21+00:00"
+            "time": "2025-08-06T13:35:44+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -3450,7 +3498,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dflydev/fig-cookies": 20
+        "dflydev/fig-cookies": 20,
+        "groton-school/slim-action": 20,
+        "groton-school/slim-lti-infrastructure-gae": 20,
+        "groton-school/slim-lti-partitioned-session": 20,
+        "groton-school/slim-lti-shim": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Application\Middleware;
 
-use App\Application\Handlers\LaunchHandler;
-use App\Domain\User\UserRepositoryInterface;
+use GrotonSchool\Slim\LTI\Domain\User\UserRepositoryInterface;
+use GrotonSchool\Slim\LTI\PartitionedSession\Handlers\LaunchHandler;
 use Odan\Session\SessionInterface;
 use Packback\Lti1p3\Interfaces\ICache;
 use Packback\Lti1p3\Interfaces\ICookie;
