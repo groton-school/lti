@@ -1,15 +1,15 @@
 [submodule "packages/lti-registration-builder"]
 	path = packages/lti-registration-builder
-	url = git@github.com:groton-school/lti.lti-registration-builder.git
+url=git@github.com:groton-school/lti-registration-builder.git
 [submodule "packages/slim-gae-shim"]
 	path = packages/slim-gae-shim
-	url = git@github.com:groton-school/lti.slim-gae-shim.git
+url=git@github.com:groton-school/slim-gae-shim.git
 [submodule "packages/slim-lti-infrastructure-gae"]
 	path = packages/slim-lti-infrastructure-gae
-	url = git@github.com:groton-school/lti.slim-lti-infrastructure-gae.git
+url=git@github.com:groton-school/slim-lti-infrastructure-gae.git
 [submodule "packages/slim-lti-shim"]
 	path = packages/slim-lti-shim
-	url = git@github.com:groton-school/lti.slim-lti-shim.git
+url=git@github.com:groton-school/slim-lti-shim.git
 [submodule "packages/slim-lti-partitioned-session"]
 	path = packages/slim-lti-partitioned-session
 	url = git@github.com:groton-school/slim-lti-partitioned-session.git
