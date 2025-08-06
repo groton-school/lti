@@ -2,6 +2,7 @@
 
 namespace App\Application\Middleware;
 
+use App\Application\Actions\ValidateSessionAction;
 use Dflydev\FigCookies\FigResponseCookies;
 use Dflydev\FigCookies\Modifier\SameSite;
 use Dflydev\FigCookies\SetCookie;
@@ -69,6 +70,10 @@ class PartitionedSession implements MiddlewareInterface
          * session cookie as partitioned and rely on Chromium and WebKit
          * to accept the last cookie version set as final.
          */
+        $sessionId = $request->getQueryParams()[ValidateSessionAction::PARAM_NAME] ?? null;
+        if ($sessionId) {
+            session_id($sessionId);
+        }
         $response = $handler->handle($request);
         return FigResponseCookies::modify(
             $response,
