@@ -2,10 +2,10 @@
 
 ## Notes
 
-This project was created from the [slim-lti-gae-skeleton](https://github.com/groton-school/slim-lti-gae-skeleton#readme):
+This project was created from the [slim-skeleton](https://github.com/groton-school/slim-skeleton#readme):
 
 ```sh
-composer create-project --stability dev groton-school/slim-lti-gae-skeleton examples/lti-gae
+composer create-project --ask --stability dev --repository "{\"type\":\"vcs\",\"url\":\"https://github.com/groton-school/slim-skeleton\"}" groton-school/slim-skeleton "dev-lti/gae"
 ```
 
 In [app/settings.php](./app/settings.php), `$TOOL_NAME` was updated, and then it was ready to be deployed to Google App Engine:
