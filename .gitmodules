@@ -16,3 +16,12 @@ url=git@github.com:groton-school/slim-lti-shim.git
 [submodule "templates/slim-skeleton"]
 	path = templates/slim-skeleton
 	url = git@github.com:groton-school/slim-skeleton.git
+[submodule "packages/slim-spa-canvas-api-client"]
+	path = packages/slim-spa-canvas-api-client
+	url = git@github.com:groton-school/slim-spa-canvas-api-client.git
+[submodule "packages/slim-norms"]
+	path = packages/slim-norms
+	url = git@github.com:groton-school/slim-norms.git
+[submodule "packages/slim-spa-oauth2-client"]
+	path = packages/slim-spa-oauth2-client
+	url = git@github.com:groton-school/slim-spa-oauth2-client.git
