@@ -25,3 +25,6 @@ url=git@github.com:groton-school/slim-lti-shim.git
 [submodule "packages/slim-spa-oauth2-client"]
 	path = packages/slim-spa-oauth2-client
 	url = git@github.com:groton-school/slim-spa-oauth2-client.git
+[submodule "packages/session-cookie-middleware"]
+	path = packages/session-cookie-middleware
+	url = git@github.com:groton-school/session-cookie-middleware.git
