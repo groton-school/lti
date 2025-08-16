@@ -28,3 +28,6 @@ url=git@github.com:groton-school/slim-lti-shim.git
 [submodule "packages/slim-oauth2-api-proxy"]
 	path = packages/slim-oauth2-api-proxy
 	url = git@github.com:groton-school/slim-oauth2-api-proxy.git
+[submodule "packages/slim-canvas-api-proxy"]
+	path = packages/slim-canvas-api-proxy
+	url = git@github.com:groton-school/slim-canvas-api-proxy.git
