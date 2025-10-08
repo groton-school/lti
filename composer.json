@@ -1,18 +1,67 @@
 {
-  "name": "groton-school/lti",
-  "license": "GPL-3.0",
-  "authors": [
-    {
-      "name": "Seth Battis",
-      "email": "sbattis@groton.org"
-    }
-  ],
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.74"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "sort-packages": true
-  }
+    "name": "groton-school/lti",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sbattis@groton.org"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "composer/composer": "^2.8",
+        "dflydev/fig-cookies": "^3.2",
+        "google/cloud-firestore": "^1.53",
+        "google/cloud-logging": "^1.32",
+        "groton-school/oauth2-canvaslms": "^1.1",
+        "league/oauth2-client": "^2.8",
+        "league/uri": "^7.5",
+        "odan/session": "^6.4",
+        "packbackbooks/lti-1p3-tool": "^6.3",
+        "php-di/php-di": "^7.0",
+        "psr/container": "^2.0",
+        "psr/http-message": "^2.0",
+        "psr/log": "^3.0",
+        "slim/http": "^1.4",
+        "slim/php-view": "^3.4",
+        "slim/slim": "^4.12",
+        "symfony/filesystem": "^7.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "marcocesarato/php-conventional-changelog": "*",
+        "symplify/monorepo-builder": "^12.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrotonSchool\\LTI\\Registration\\": "packages/lti-registration-builder/src/",
+            "GrotonSchool\\Session\\": "packages/session-cookie-middleware/src/",
+            "GrotonSchool\\Slim\\CanvasLMS\\": "packages/slim-canvas-api-proxy/src/",
+            "GrotonSchool\\Slim\\GAE\\": "packages/slim-gae-shim/src/",
+            "GrotonSchool\\Slim\\LTI\\": "packages/slim-lti-shim/src/",
+            "GrotonSchool\\Slim\\LTI\\Infrastructure\\GAE\\": "packages/slim-lti-infrastructure-gae/src/",
+            "GrotonSchool\\Slim\\LTI\\PartitionedSession\\": "packages/slim-lti-partitioned-session/src/",
+            "GrotonSchool\\Slim\\Norms\\": "packages/slim-norms/src/",
+            "GrotonSchool\\Slim\\OAuth2\\APIProxy\\": "packages/slim-oauth2-api-proxy/src/",
+            "GrotonSchool\\Slim\\OAuth2\\APIProxy\\GAE\\": "packages/slim-oauth2-api-proxy-gae-repository/src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "replace": {
+        "groton-school/lti-registration-builder": "self.version",
+        "groton-school/session-cookie-middleware": "self.version",
+        "groton-school/slim-canvas-api-proxy": "self.version",
+        "groton-school/slim-gae-shim": "self.version",
+        "groton-school/slim-lti-infrastructure-gae": "self.version",
+        "groton-school/slim-lti-partitioned-session": "self.version",
+        "groton-school/slim-lti-shim": "self.version",
+        "groton-school/slim-norms": "self.version",
+        "groton-school/slim-oauth2-api-proxy": "self.version",
+        "groton-school/slim-oauth2-api-proxy-gae-repository": "self.version"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
