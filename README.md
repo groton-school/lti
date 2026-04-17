@@ -3,7 +3,7 @@
 Below are a number of resources that I found useful in implementing this:
 
 - [1EdTech's unmaintained lti-1-3-php library](https://github.com/1EdTech/lti-1-3-php-library) gave some helpful information about endpoints.
-- [1EdTech;s unmaintained lti-1-3-php-example-tool](https://github.com/1EdTech/lti-1-3-php-example-tool/tree/master) gave some insight into the intended use of their library and further insights into the behavior of endpoints.
+- [1EdTech's unmaintained lti-1-3-php-example-tool](https://github.com/1EdTech/lti-1-3-php-example-tool/tree/master) gave some insight into the intended use of their library and further insights into the behavior of endpoints.
 - [Packback's lti-1-3-php-library](https://github.com/packbackbooks/lti-1-3-php-library) is actual useful, maintained code on which this depends!
 - [Packback's wiki for that library](https://github.com/packbackbooks/lti-1-3-php-library/wiki) was helpful in thinking through their implementation but is (as of this writing) lagging behind their actual implementation by a bit, I think.
 - [Instructure's LTI documentation](https://developerdocs.instructure.com/services/canvas/external-tools/lti) was super helpful in figuring out both registration and launch issues.
